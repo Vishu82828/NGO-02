@@ -1,0 +1,26 @@
+.member-documents {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .id-card, .joining-letter {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+    background: #f9f9f9;
+  }
+  
+  .print-button {
+    padding: 10px 15px;
+    margin: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .print-button:hover {
+    background: #0056b3;
+  }
+  

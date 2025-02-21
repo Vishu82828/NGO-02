@@ -6,6 +6,7 @@ import Status from './Pages/Status';
 import Donate from './Components/Donate';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
+import MemberDocuments from './Pages/MemberDocuments';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/status" element={<Status />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path='/document' element={<MemberDocuments />}/>
       </Routes>
       <Footer/>
     </Router>
