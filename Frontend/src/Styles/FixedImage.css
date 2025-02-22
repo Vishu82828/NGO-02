@@ -1,0 +1,85 @@
+/* Page Container */
+.page-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/* Parallax Background */
+.background-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjustable height */
+    overflow: hidden;
+}
+
+/* Fixed Background Image */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    /* background: url("../assets/snow.png") no-repeat center center/cover; */
+    z-index: 1;
+}
+
+/* Content Overlay on Image */
+.content-on-image {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.content-on-image h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.content-on-image p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Scrollable Content Below */
+.scrollable-section {
+    width: 100%;
+    background: white;
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}

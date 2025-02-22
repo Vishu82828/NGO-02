@@ -7,6 +7,7 @@ import Donate from './Components/Donate';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
 import MemberDocuments from './Pages/MemberDocuments';
+import Mission from './Pages/Mission';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/status" element={<Status />} />
         {/* <Route path="/donate" element={<Donate />} /> */}
         <Route path='/document' element={<MemberDocuments />}/>
+        <Route path='/mission' element={<Mission/>} />
       </Routes>
       <Footer/>
     </Router>

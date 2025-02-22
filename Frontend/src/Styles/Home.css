@@ -13,6 +13,7 @@
     background-color: #f9f9f9;
     padding-bottom: 50px;
     font-family: Arial, sans-serif;
+    /* z-index: 5; */
 }
   
   /* Hero Section */
@@ -21,6 +22,7 @@
     width: 100%;
     height: 60vh;
     overflow: hidden;
+    z-index: 5;
   }
   
   .hero-slider {
@@ -70,9 +72,73 @@
   .get-involved {
     text-align: center;
     margin: 40px 0;
+    z-index: 5;
+  }
+
+  .get-involved {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
   }
   
+  .get-involved h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .get-involved span {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .benefit-card {
+    flex: 1 1 calc(33.33% - 20px); /* Responsive three-column layout */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-width: 250px;
+    max-width: 350px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .benefit-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .benefit-card {
+      flex: 1 1 calc(50% - 20px); /* Two-column layout for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefit-card {
+      flex: 1 1 100%; /* Single-column layout for mobile */
+    }
+  }
+  
+  
   .member-btn {
+    margin-top: 3rem;
     padding: 10px 20px;
     background: #007bff;
     color: white;
@@ -222,3 +288,76 @@
     }
 }
 
+
+.mission-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  z-index: 5;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.content-container {
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0073e6;
+}
+
+.section-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.section-description, .section-text {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.read-more {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.info-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.info-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 24px;
+  color: #0073e6;
+  margin-bottom: 10px;
+}

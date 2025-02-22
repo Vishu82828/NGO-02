@@ -1,0 +1,51 @@
+.mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .mission-content {
+    max-width: 50%;
+  }
+  
+  .mission-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0073e6;
+  }
+  
+  .mission-text {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .mission-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .mission-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .mission-content {
+      max-width: 100%;
+    }
+  }
+  

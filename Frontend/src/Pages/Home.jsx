@@ -4,11 +4,13 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import FixedImage from "../Components/FixedImage";
 
 import Slide1 from "../assets/Slide1.jpg";
 import Slide2 from "../assets/Slide2.png";
 import Slide3 from "../assets/Slide3.jpg";
 import DemoImage from "../assets/demo.png";
+import Mission2 from "../assets/Mission2.jpg"
 
 const Home = () => {
   const [showForm, setShowForm] = useState(false);
@@ -57,6 +59,10 @@ const Home = () => {
   const handleLoginChange = (e) => {
     setLoginData({ ...loginData, [e.target.name]: e.target.value });
   };
+
+  const mission = () => {
+    navigate("/mission")
+  }
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -127,7 +133,7 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
+    <div className="home" style={{ zIndex: 5 }}>
       <ToastContainer position="top-right" autoClose={3000} />
       <header className="hero">
         <div className="hero-slider">
@@ -163,8 +169,102 @@ const Home = () => {
         </div>
       )}
       
+      {/* Mission Sections */}
+      <section className="mission-section" style={{ zIndex: 5 }}>
+        <div className="image-container">
+          <img src={Mission2} alt="Our Mission" />
+        </div>
+        <div className="content-container">
+          <span className="section-title">What We Do</span>
+          <h3 className="section-heading">We are on a mission</h3>
+          <span className="section-description">
+            Volutpat odio facilisis mauris sit amet. Purus gravida quis blandit turpis cursus in. Tortor aliquam nulla facilisi cras.
+          </span>
+          <p className="section-text">
+            Egestas fringilla phasellus faucibus scelerisque eleifend. Tempus egestas sed sed risus pretium quam vulputate dignissim. Enim praesent elementum facilisis leo vel fringilla. Enim ut elementum sagittis donec adipiscing tristique risus nec.
+          </p>
+          <button className="read-more" onClick={mission}>Read More</button>
+        </div>
+      </section>
+      
+      {/* Process Sections */}
+      <section className="info-section" style={{ zIndex: 5 }}>
+        <span className="section-title">How We Work</span>
+        <h2 className="section-heading">About Our NGO Information</h2>
+        <p className="section-text">
+          Tempus iaculis urna id volutpat lacus laoreet non curabitur. Suspendisse in est ante in consectetur a erat nam at lectus urna duis convallis.
+        </p>
+        <div className="info-container">
+          <div className="info-card">
+            <span className="icon">Icon</span>
+            <h3>Volunteer</h3>
+            <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
+          </div>
+          <div className="info-card">
+            <span className="icon">Icon</span>
+            <h3>Fundraise</h3>
+            <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
+          </div>
+          <div className="info-card">
+            <span className="icon">Icon</span>
+            <h3>Donation</h3>
+            <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
+          </div>
+        </div>
+      </section>
+
+      <FixedImage/>
+
       <section className="get-involved">
-        <h2>Get Involved</h2>
+  <h2>Get Involved</h2>
+  <span>
+    Becoming a member of a Non-Governmental Organization (NGO) offers numerous personal and professional benefits. Here's why you should consider joining:
+  </span>
+
+  <div className="benefits-container">
+    <div className="benefit-card">
+      <h3>Networking Opportunities</h3>
+      <p>Membership provides access to a diverse network of professionals, activists, and community leaders, fostering collaborations and partnerships.</p>
+    </div>
+    <div className="benefit-card">
+      <h3>Personal Fulfillment</h3>
+      <p>Contributing to meaningful causes brings a sense of accomplishment and purpose, enhancing personal satisfaction.</p>
+    </div>
+    <div className="benefit-card">
+      <h3>Skill Development</h3>
+      <p>Engaging in NGO activities hones various skills, including project management, leadership, and communication.</p>
+    </div>
+    <div className="benefit-card">
+      <h3>Professional Growth</h3>
+      <p>Active involvement can lead to career advancement opportunities within the organization or the broader non-profit sector.</p>
+    </div>
+    <div className="benefit-card">
+      <h3>Access to Resources</h3>
+      <p>Members often receive exclusive access to research materials, training sessions, and workshops, enhancing their knowledge base.</p>
+    </div>
+    <div className="benefit-card">
+      <h3>Advocacy and Influence</h3>
+      <p>Membership offers a platform to advocate for issues you are passionate about, influencing policy and societal change.</p>
+    </div>
+    <div className="benefit-card">
+      <h3>Community Engagement</h3>
+      <p>Being part of an NGO connects you with like-minded individuals, fostering a sense of community and shared purpose.</p>
+    </div>
+    {/* <div className="benefit-card">
+      <h3>Learning Opportunities</h3>
+      <p>Exposure to diverse challenges and solutions promotes continuous learning and personal development.</p>
+    </div> */}
+    <div className="benefit-card">
+      <h3>Recognition and Credibility</h3>
+      <p>Active members are often recognized for their contributions, enhancing their credibility in the sector.</p>
+    </div>
+    <div className="benefit-card">
+      <h3>Contribution to Social Impact</h3>
+      <p>Your involvement directly contributes to positive societal changes, addressing pressing issues and improving lives.</p>
+    </div>
+  </div>
+
+
         <button className="member-btn" onClick={() => setShowForm(true)}>Become a Member</button>
 
         {showForm && (
