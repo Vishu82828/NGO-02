@@ -34,16 +34,20 @@ const Status = () => {
   }, [email, navigate]);
 
   const handleLogout = () => {
-    localStorage.removeItem("email"); // Remove email from storage
+    localStorage.clear(); // Clears all local storage data
+    sessionStorage.clear(); // Clears session storage data (if any)
+    setStatus(""); // Reset state
     toast.success("Logged out successfully.");
-    navigate("/"); // Redirect to home page
+    navigate("/", { replace: true }); // Redirect to home and replace history to prevent going back
+    window.location.reload(); // Ensure all state and cached data are cleared
   };
+  
 
   return (
     <div className="status-container">
       <h2>Membership Status</h2>
       {loading ? (
-        <p className="status-text">Loading...</p>
+        <p className="status-text">Loading...</p> 
       ) : (
         <>
           {status ? (

@@ -10,4 +10,3 @@ urlpatterns = [
     path('verify-payment/', verify_payment, name='verify_payment'),
     path('member/<str:email>/', get_member_details, name='get_member_details'),
 ]
-

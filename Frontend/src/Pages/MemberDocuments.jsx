@@ -35,12 +35,12 @@ const MemberDocuments = () => {
 
   // Print ID Card
   const handlePrintIDCard = useReactToPrint({
-    content: () => idCardRef.current ? idCardRef.current : null,
+    content: () => idCardRef.current,
   });
 
   // Print Joining Letter
   const handlePrintJoiningLetter = useReactToPrint({
-    content: () => letterRef.current ? letterRef.current : null,
+    content: () => letterRef.current,
   });
 
   return (
@@ -53,7 +53,9 @@ const MemberDocuments = () => {
           <div className="print-container">
             <div ref={idCardRef} className="id-card">
               <h3>Membership ID Card</h3>
+              <img src={member.photo} alt="Member" className="member-photo" />
               <p><strong>Name:</strong> {member.name}</p>
+              <p><strong>Address:</strong> {member.address}</p>
               <p><strong>Email:</strong> {member.email}</p>
               <p><strong>Membership ID:</strong> {member.id}</p>
               <p><strong>Joining Date:</strong> {member.joining_date}</p>

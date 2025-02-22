@@ -13,10 +13,10 @@ const App = () => {
     <Router>
       <Routes>
         <Route path='/*' element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/register" element={<Register />} /> */}
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/status" element={<Status />} />
-        <Route path="/donate" element={<Donate />} />
+        {/* <Route path="/donate" element={<Donate />} /> */}
         <Route path='/document' element={<MemberDocuments />}/>
       </Routes>
       <Footer/>
