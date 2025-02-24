@@ -16,11 +16,11 @@ const Mission = () => {
         <p className="mission-text">
           Our mission is to create a positive impact in society by helping those in need. We strive to bring change through education, support, and community engagement. Together, we can build a better future.
         </p>
+        <button className="go-back" onClick={goBack}>Go Back </button>
       </div>
       <div className="mission-image">
         <img src={missionImage} alt="Mission" />
       </div>
-      <button className="" onClick={goBack}>Go Back </button>
     </section>
   );
 };

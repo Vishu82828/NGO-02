@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Footer.css";
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -34,22 +35,22 @@ const Footer = () => {
 
         {/* Social Media */}
         <div className="footer-section">
-          <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
+      <h3>Follow Us</h3>
+      <div className="social-icons">
+        <Link to="https://facebook.com" target="_blank">
+          <FaFacebookF className="social-icon" />
+        </Link>
+        <Link to="https://twitter.com" target="_blank">
+          <FaTwitter className="social-icon" />
+        </Link>
+        <Link to="https://instagram.com" target="_blank">
+          <FaInstagram className="social-icon" />
+        </Link>
+        <Link to="https://linkedin.com" target="_blank">
+          <FaLinkedinIn className="social-icon" />
+        </Link>
+      </div>
+    </div>
       </div>
 
       {/* Copyright Section */}

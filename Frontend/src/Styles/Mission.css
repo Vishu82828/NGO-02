@@ -37,6 +37,21 @@
     max-width: 400px;
     border-radius: 10px;
   }
+
+  .go-back{
+    margin-top: 3rem;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .go-back:hover{
+    background: #0056b3;
+  }
   
   @media (max-width: 768px) {
     .mission-section {

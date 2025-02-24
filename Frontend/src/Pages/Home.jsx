@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import FixedImage from "../Components/FixedImage";
+import { FaHandsHelping, FaHandHoldingHeart, FaDonate } from 'react-icons/fa';
 
 import Slide1 from "../assets/Slide1.jpg";
 import Slide2 from "../assets/Slide2.png";
@@ -189,29 +190,29 @@ const Home = () => {
       
       {/* Process Sections */}
       <section className="info-section" style={{ zIndex: 5 }}>
-        <span className="section-title">How We Work</span>
-        <h2 className="section-heading">About Our NGO Information</h2>
-        <p className="section-text">
-          Tempus iaculis urna id volutpat lacus laoreet non curabitur. Suspendisse in est ante in consectetur a erat nam at lectus urna duis convallis.
-        </p>
-        <div className="info-container">
-          <div className="info-card">
-            <span className="icon">Icon</span>
-            <h3>Volunteer</h3>
-            <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
-          </div>
-          <div className="info-card">
-            <span className="icon">Icon</span>
-            <h3>Fundraise</h3>
-            <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
-          </div>
-          <div className="info-card">
-            <span className="icon">Icon</span>
-            <h3>Donation</h3>
-            <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
-          </div>
+      <span className="section-title">How We Work</span>
+      <h2 className="section-heading">About Our NGO Information</h2>
+      <p className="section-text">
+        Tempus iaculis urna id volutpat lacus laoreet non curabitur. Suspendisse in est ante in consectetur a erat nam at lectus urna duis convallis.
+      </p>
+      <div className="info-container">
+        <div className="info-card">
+          <span className="icon"><FaHandsHelping /></span>
+          <h3>Volunteer</h3>
+          <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
         </div>
-      </section>
+        <div className="info-card">
+          <span className="icon"><FaHandHoldingHeart /></span>
+          <h3>Fundraise</h3>
+          <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
+        </div>
+        <div className="info-card">
+          <span className="icon"><FaDonate /></span>
+          <h3>Donation</h3>
+          <p>Volutpat maecenas volutpat lorem dumy erat velit. Blandit massa enim nec dui nunc mattis enim ut tellus. Imperdiet proin</p>
+        </div>
+      </div>
+    </section>
 
       <FixedImage/>
 

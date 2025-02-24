@@ -1,17 +1,19 @@
 import React from 'react'
 import '../Styles/FixedImage.css'
+import img1 from '../assets/img1.jpg'
+import img2 from '../assets/img2.jpg'
 
 export default function FixedImagePage() {
   return (
     <div className="page-container">
       {/* Background Image with Overlay Content */}
-      <div className="background-wrapper">
+      {/* <div className="background-wrapper">
         <div className="background-image"></div>
         <div className="content-on-image">
           <h1>Welcome to Our NGO</h1>
           <p>Join us in making a difference. Become a member and contribute to creating a positive impact in society.</p>
         </div>
-      </div>
+      </div> */}
 
       {/* Scrollable Content */}
       <div className="scrollable-section">
@@ -31,6 +33,14 @@ export default function FixedImagePage() {
             <h3>Community Impact</h3>
             <p>Directly contribute to societal improvements and policy changes.</p>
           </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src={img1} alt="" />
+        </div>
+        <div>
+          <img src={img2} alt="" />
         </div>
       </div>
     </div>
